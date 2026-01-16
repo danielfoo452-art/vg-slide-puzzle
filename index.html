@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>The Monument</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    </head>
+
+    <body>
+
+        <h1>The Monument</h1>
+
+        <div class="hud">
+            Moves: <span id="moveCount">0</span>
+        </div>
+
+        <div class="game-layout">
+            <div id="puzzle"></div>
+
+            <div class="reference">
+                <p>Reference Image</p>
+                <img src="van.gor.og.jpeg">
+            </div>
+        </div>
+
+        <div id="winMessage">
+            <div class="winBox">
+                <h2>Congratulation for your adventures steps..</h2>
+                <p class ="wininfo">
+                    Erected in 1993 by Dato’ Hj. Ramli Abd. Rahman, this Time Monument stands in the former Taman Astakona as a heartfelt tribute to his alma mater and the cherished memories of MPSI and IPSI students. The sculpture reflects a British Neo-Colonial aesthetic, blending the elegant curved roofs of the Queen Anne Revival style with the rugged, textured columns of the Arts and Crafts movement. Designed to harmonize with the historic colonial architecture of the UPSI campus, the monument serves as a symbolic bridge between 1990s local materials and Western design. It remains a poignant landmark that “freezes” the nostalgic essence of 1993, ensuring that the school’s golden memories remain eternal even as time marches on.
+                </p>
+
+                <button onclick="playAgain()">Play Again</button>
+            </div>
+        </div>
+        
+        <button onclick="shuffle()">Shuffle</button>
+
+        <script src="script.js"></script>
+        
+        <audio id="winSound" src="win.mp3" preload="auto"></audio>
+        <audio id="slideSound" src="select.1.mp3" preload="auto"></audio>
+    </body>
+</html>
